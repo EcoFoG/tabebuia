@@ -1,0 +1,19 @@
+--- 
+title: "Tabebuia"
+subtitle: "Tabebuia Wiki"
+author: "S. Schmitt"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+link-citations: yes
+colorlinks: yes
+description: "Wiki to help Tabebuia use, management, and administration."
+---
+
+# Preface {-}
+
+Wiki to help Tabebuia use, management, and administration.
+
+Have a nice reading.
+
+<div align="right">  *Sylvain*
