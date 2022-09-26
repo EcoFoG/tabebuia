@@ -1,0 +1,5 @@
+# (PART) Genetic {-}
+
+# Handling `fastq`
+
+> A little tutorial on handling and cleaning fastq files?

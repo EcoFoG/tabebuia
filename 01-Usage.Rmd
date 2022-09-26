@@ -1,6 +1,52 @@
-# Usage {-}
+# (PART) Usage {-}
 
+# Basic usage
 
-*This is a draft, the wiki will further develop later.*
+Please follow these steps before starting a calculation on Tabebuia:
 
-**Before using Tabebuia**, please check the cluster load at: http://tabebuia.ecofog.gf/ganglia . Next, indicate your scheduled usage for the day at: https://docs.google.com/spreadsheets/d/1b3uUrY0Wy9p4joah7N_JM49LVqHAxR3eUYSRHQZYxEU/edit?usp=sharing .
+1. Check the cluster load at: http://tabebuia.ecofog.gf/ganglia
+1. Indicate your scheduled usage for each day at: https://docs.google.com/spreadsheets/d/1b3uUrY0Wy9p4joah7N_JM49LVqHAxR3eUYSRHQZYxEU/edit?usp=sharing
+1. Run and monitor your calculation
+
+> If there is a shortage of resources, you can use the mailing list or contact connected users to ask them to specify their use or reduce their consumption.
+
+## Ganglia
+
+> Add a description of Ganglia here with links to documentation.
+
+## Google sheets
+
+> Add a description of the google sheet here with an explanation of its usage.
+
+## Mailing list
+
+> Add a description and a link to the mailing list here.
+
+# Cores
+
+> Add a description of what are cluster cores, where to check their load, and how to estimate your need.
+
+# Memory
+
+> Add a description of what is RAM, where to check its load, and how to estimate your need.
+
+# Disk usage
+
+The total disk space for all users is XTo. 
+So try to avoid using more than XGB per user. 
+If you need more temporarily, please ask on the mailing list.
+**Tabebuia's disk space is not designed for long-term data storage.**
+Try to clean up your data as soon as you do not need them anymore.
+You can use a hard drive connected to Tabebuia or a direct link to Roucou to avoid storing raw data on Tabebuia.
+You also need to ask short term staff to clean up their session before the end of their contract.
+
+> Add a description of the diskusage tool here with links to documentation.
+
+# Server load
+
+> Add a description of Ganglia here with links to documentation.
+
+> Add a description of the system load tool here with links to documentation.
+
+> Add a description of the top command here with links to documentation.
+
