@@ -12,41 +12,73 @@ Please follow these steps before starting a calculation on Tabebuia:
 
 ## Ganglia
 
-> Add a description of Ganglia here with links to documentation.
+Ganglia is installed on Tabebuia and can be seen at: http://tabebuia.ecofog.gf/ganglia.
+Ganglia is a system observer to check in time memory and CPU usage on the cluster:
+
+```{r}
+knitr::include_graphics("img/ganglia.png")
+```
+
+More information can be found at: http://ganglia.info/ .
 
 ## Google sheets
 
-> Add a description of the google sheet here with an explanation of its usage.
+For now, the shared usage on Tabebuia is organised in a google doc where each user defines how many CPUs and memory (per 10GB) they need for how many days.
+The google doc is available here :https://docs.google.com/spreadsheets/d/1b3uUrY0Wy9p4joah7N_JM49LVqHAxR3eUYSRHQZYxEU/edit?usp=sharing.
+Just add your initial to book resources:
+
+```{r}
+knitr::include_graphics("img/gsheets.png")
+```
+
+> It is obvious that there is no control of the reserved use, so try to respect what you indicate.
 
 ## Mailing list
 
-> Add a description and a link to the mailing list here.
+In case you need to contact all or certain users, a mailing list is maintained at: https://docs.google.com/document/d/191y_8Yc8j8a0mGkMUXOlo6ImyFjUyasCEeVGQ1kySlo/edit?usp=sharing.
 
 # Cores
 
 > Add a description of what are cluster cores, where to check their load, and how to estimate your need.
 
+Use `MATE System Monitor` to monitor your CPU usage efficiently;
+
+```{r}
+knitr::include_graphics("img/SystemMonitor.png")
+```
+
+More information can be found at: https://doc.ubuntu-fr.org/moniteur_systeme .
+
+> Add a description of the top command here with links to documentation.
+
 # Memory
 
 > Add a description of what is RAM, where to check its load, and how to estimate your need.
 
+Use `MATE System Monitor` to monitor your memory usage efficiently;
+
+```{r}
+knitr::include_graphics("img/SystemMonitor.png")
+```
+
+More information can be found at: https://doc.ubuntu-fr.org/moniteur_systeme .
+
+> Add a description of the top command here with links to documentation.
+
 # Disk usage
 
-The total disk space for all users is XTo. 
-So try to avoid using more than XGB per user. 
+The total disk space for all users is 5.41TB. 
+So try to avoid using more than 200GB per user (for 25 users). 
 If you need more temporarily, please ask on the mailing list.
 **Tabebuia's disk space is not designed for long-term data storage.**
 Try to clean up your data as soon as you do not need them anymore.
 You can use a hard drive connected to Tabebuia or a direct link to Roucou to avoid storing raw data on Tabebuia.
 You also need to ask short term staff to clean up their session before the end of their contract.
 
-> Add a description of the diskusage tool here with links to documentation.
+Use `MATE Disk usage Analyzer` to monitor your disk usage efficiently;
 
-# Server load
+```{r}
+knitr::include_graphics("img/diskusage.png")
+```
 
-> Add a description of Ganglia here with links to documentation.
-
-> Add a description of the system load tool here with links to documentation.
-
-> Add a description of the top command here with links to documentation.
-
+More information can be found at: https://wiki.gnome.org/action/show/Apps/DiskUsageAnalyzer .

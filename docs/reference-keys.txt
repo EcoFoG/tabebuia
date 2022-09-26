@@ -5,7 +5,6 @@ mailing-list
 cores
 memory
 disk-usage
-server-load
 handling-fastq
 filter-trim-cluster
-ressources-list
+resources-list

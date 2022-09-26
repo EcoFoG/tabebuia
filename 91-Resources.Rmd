@@ -1,6 +1,6 @@
-# (PART) Ressources {-}
+# (PART) Resources {-}
 
-# Ressources list
+# Resources list
 
 * [`awk` en français](https://www.funix.org/fr/unix/awk.htm)
 
