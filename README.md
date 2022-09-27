@@ -2,7 +2,7 @@
 
 **Tabebuia Wiki.**
 
-Wiki to help Tabebuia use, management, and administration: https://sylvainschmitt.github.io/tabebuia/ . 
+Wiki to help Tabebuia use, management, and administration: https://github.com/sylvainschmitt/tabebuia/wiki . 
 
 You can directly jump to the different sections:
 
