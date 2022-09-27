@@ -1,5 +1,0 @@
-# (PART) Metabarcoding {-}
-
-# Filter, Trim & Cluster
-
-> A little tutorial on Metabarcoding basics?
