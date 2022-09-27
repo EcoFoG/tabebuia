@@ -1,0 +1,5 @@
+# (PART) Modelling {-}
+
+# Bayesian modelling
+
+> A little tutorial on using cmdstanr via the Rstudio server on Tabebuia

@@ -1,3 +1,8 @@
+connection
+remote-desktop
+windows
+linux
+rstudio-server
 basic-usage
 ganglia
 google-sheets
@@ -7,4 +12,7 @@ memory
 disk-usage
 handling-fastq
 filter-trim-cluster
+bayesian-modelling
+basic-administration
+updating-tabebuia
 resources-list

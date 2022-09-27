@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Memory | Tabebuia</title>
+  <title>Chapter 1 Connection | Tabebuia</title>
   <meta name="description" content="Wiki to help Tabebuia use, management, and administration." />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Memory | Tabebuia" />
+  <meta property="og:title" content="Chapter 1 Connection | Tabebuia" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Memory | Tabebuia" />
+  <meta name="twitter:title" content="Chapter 1 Connection | Tabebuia" />
   
   <meta name="twitter:description" content="Wiki to help Tabebuia use, management, and administration." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="cores.html"/>
-<link rel="next" href="disk-usage.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="basic-usage.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -186,26 +186,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class = rmdreview>
 This book is in <b><a href="open.html#open">Open Review</a></b>. I want your feedback to make the book better for you and other readers. To add your annotation, <span style="background-color: #3297FD; color: white">select some text</span> and then click the <i class="h-icon-annotate"></i> on the pop-up menu. To see the annotations of others, click the <i class="h-icon-chevron-left"></i> in the upper right hand corner of the page <i class="fa fa-arrow-circle-right  fa-rotate-315" aria-hidden="true"></i>
 </div>
-<div id="memory" class="section level1">
-<h1><span class="header-section-number">Chapter 4</span> Memory</h1>
-<blockquote>
-<p>Add a description of what is RAM, where to check its load, and how to estimate your need.</p>
-</blockquote>
-<p>Use <code>MATE System Monitor</code> to monitor your memory usage efficiently;</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="memory.html#cb10-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;img/SystemMonitor.png&quot;</span>)</span></code></pre></div>
-<p><img src="img/SystemMonitor.png" width="355" /></p>
-<p>More information can be found at: <a href="https://doc.ubuntu-fr.org/moniteur_systeme" class="uri">https://doc.ubuntu-fr.org/moniteur_systeme</a> .</p>
-<blockquote>
-<p>Add a description of the top command here with links to documentation.</p>
-</blockquote>
+<div id="connection" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> Connection</h1>
+<div id="remote-desktop" class="section level2">
+<h2><span class="header-section-number">1.1</span> Remote Desktop</h2>
+<p>The most common connection to Tabebuia is via the Remote Desktop Protocol (RDP) although other methods such as SSH tunneling can be used.</p>
+<div id="windows" class="section level4">
+<h4><span class="header-section-number">1.1.0.1</span> Windows</h4>
+<p>In windows use the “Remote Desktop Connection” tool with the address tabebuia.ecofog.gf:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="connection.html#cb1-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;img/remote_desktop_windows.jpeg&quot;</span>)</span></code></pre></div>
+<p><img src="img/remote_desktop_windows.jpeg" width="271" /></p>
+<p>You will be connected to Tabebuia and have to enter your email and password in the XRDP security to connect to your session:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="connection.html#cb2-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;img/xrdp.jpeg&quot;</span>)</span></code></pre></div>
+<p><img src="img/xrdp.jpeg" width="178" /></p>
+</div>
+<div id="linux" class="section level3">
+<h3><span class="header-section-number">1.1.1</span> Linux</h3>
+<p>Under Linux you can use different tools, but I recommend Remmina which is quite common.
+In the main window, you can create a profile for the Tabebuia RDP connection:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="connection.html#cb3-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;img/remmina_main.png&quot;</span>)</span></code></pre></div>
+<p><img src="img/remmina_main.png" width="461" /></p>
+<p>you can directly enter your user name (email) and password to avoid connecting through XRDP:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="connection.html#cb4-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;img/remmina_tabebuia.png&quot;</span>)</span></code></pre></div>
+<p><img src="img/remmina_tabebuia.png" width="438" /></p>
+</div>
+</div>
+<div id="rstudio-server" class="section level2">
+<h2><span class="header-section-number">1.2</span> Rstudio server</h2>
+<p>You may also only want to use R via the Rstudio server and not connect to a remote desktop.
+For that connect to the interface at: <a href="https://rstudio2.ecofog.gf/" class="uri">https://rstudio2.ecofog.gf/</a> .</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="connection.html#cb5-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;img/rstudio_login.png&quot;</span>)</span></code></pre></div>
+<p><img src="img/rstudio_login.png" width="170" /></p>
+<p>Use your email and password and you’ll have access to an Rstudio interface within your browser:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="connection.html#cb6-1"></a>knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="st">&quot;img/rstudio.png&quot;</span>)</span></code></pre></div>
+<p><img src="img/rstudio.png" width="915" /></p>
+<p>More information can be found at: <a href="https://support.rstudio.com/hc/en-us/articles/200552306-Getting-Started" class="uri">https://support.rstudio.com/hc/en-us/articles/200552306-Getting-Started</a> .</p>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="cores.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="disk-usage.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="basic-usage.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
